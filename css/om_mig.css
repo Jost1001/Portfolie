@@ -1,0 +1,32 @@
+header {
+  background-color: var(--color-headerfooter);
+}
+body {
+  background-color: var(--color-background);
+}
+.accent_pic {
+  opacity: 0.2;
+}
+.portrait {
+  max-width: 70%;
+  place-self: center;
+}
+.erhverv {
+  place-self: end;
+  margin-top: 40px;
+  padding-left: 20px;
+  li::marker {
+    color: var(--darkgreen3rd);
+  }
+}
+.text {
+  background-color: var(--green2nd);
+  padding: 10px;
+}
+.text2 {
+  background-color: var(--lightgreen);
+  padding: 5px;
+}
+.skills {
+  list-style: none;
+}

@@ -1,0 +1,40 @@
+:root {
+  /* Farver */
+  --lightgreen: #efffe8;
+  --green: #bdd0a6;
+  --green2nd: #7db161;
+  --darkgreen: #466a48;
+  --darkgreen2nd: #0a510e;
+  --darkgreen3rd: #5f7f43;
+  --black: #000;
+  --teal: #4bbfb4;
+  --orange: #e5a455;
+  --lightorange: #ffdb8c;
+  --lightorange2nd: #d9a566;
+  --white: #fff;
+
+  /* Tekst */
+  --color-p-text: var(--black);
+  --color-folder-text: var(--darkgreen2nd);
+  --color-about-text: var(--black);
+  --color-frontpage-text: var(--orange);
+  --color-header-text: var(--lightorange2nd);
+  --color-btn-text: var(--white);
+
+  /* Baggrund */
+  --color-background: var(--lightgreen);
+
+  /* Knapper, prikker ect. */
+  --color-btn-link: var(--orange);
+  --color-btn-arrow: var(--orange);
+  --color-btn-circle: var(--lightorange);
+
+  --color-dot-filled: var(--darkgreen3rd);
+  --color-dot-unfilled: var(--green);
+
+  --color-accent-tape: var(--teal);
+
+  /* Header/Footer */
+  --color-headerfooter: var(--darkgreen);
+  --color-mobilmenu: var(--green2nd);
+}
