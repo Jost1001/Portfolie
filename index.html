@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/generel.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="icon" type="image/png" sizes="16X16" href="imgs/favikon_og_logo_mobil.png">
 
     <title>Velkommen</title>
@@ -11,15 +14,57 @@
 
 <body>
     <header>
+        <div class="logo">
+            <a href="index.html"><img src="imgs/favikon_og_logo_mobil.png" alt="logo"></a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li class="navlink">
+                    <a href="om_mig.html">Om mig</a>
+                </li>
+                <li class="navlink">Projekter
+                </li>
+                <li class="socials">
+                    <span>
+                        <a href="/instagram"><span class="instagram-icon"></span></a>
+                        <a href="/facebook"><span class="facebook-icon"></span></a>
+                    </span>
+                </li>
+            </ul>
+            <button class="burger" aria-label="Toggle menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
 
     </header>
 
     <main>
+        <h1>Portfolio</h1>
+        <img class="portrait" src="imgs/om_mig.png" alt="portræt">
+        <h4>Hej og velkommen til min portfolio ^^</h5>
+            <p>Her kan du klikke lidt rundt og læse om de projekter jeg har lavet og nogle af de færdigheder jeg har
+                lært i
+                løbet af det første semester på Multimediedesign uddannelsen hos EK. Du kan også læse lidt mere om mig
+                og
+                mine design- og tekniske- evner og færdigheder. God fornøjelse!</p>
+            <h2 class="projects">Projekter</h2>
+            <div class="grid_1-1">
+                <img class="folder" src="imgs/folder.png" alt="Tema 2">
+                <img class="folder" src="imgs/folder.png" alt="Tema 3">
+                <p class="tematext_mobil">Tema 2</p>
+                <p class="tematext_mobil">Tema 3</p>
+                <img class="folder" src="imgs/folder.png" alt="Tema 4">
+                <img class="folder" src="imgs/folder.png" alt="Tema 5">
+                <p class="tematext_mobil">Tema 4</p>
+                <p class="tematext_mobil">Tema 5</p>
+            </div>
 
     </main>
 
     <footer>
-
+        <p class="footer">@Johanne2026</p>
     </footer>
 
 </body>

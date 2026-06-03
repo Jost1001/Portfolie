@@ -1,16 +1,7 @@
-header {
-  background-color: var(--color-headerfooter);
-}
-body {
-  background-color: var(--color-background);
-}
 .accent_pic {
   opacity: 0.2;
 }
-.portrait {
-  max-width: 70%;
-  place-self: center;
-}
+
 .erhverv {
   place-self: end;
   margin-top: 40px;

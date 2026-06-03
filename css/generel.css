@@ -58,13 +58,39 @@ select,
 ::picker(select) {
   appearance: base-select;
 }
-
 /* Reset end */
 
+/* Header */
 .logo {
   max-width: 80px;
 }
-
-body {
-  padding-inline: 20px;
+header {
+  background-color: var(--color-headerfooter);
+  .menu {
+    list-style: none;
+  }
 }
+/* Header end */
+
+/* Body */
+body {
+  background-color: var(--color-background);
+}
+
+p {
+  max-width: 65ch;
+}
+.portrait {
+  max-width: 70%;
+  place-self: center;
+}
+/* Body end */
+
+/* Footer */
+footer {
+  background-color: var(--color-headerfooter);
+}
+.footer {
+  place-self: center;
+}
+/* Footer end */
