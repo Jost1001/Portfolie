@@ -37,4 +37,10 @@
   /* Header/Footer */
   --color-headerfooter: var(--darkgreen);
   --color-mobilmenu: var(--green2nd);
+
+  /* FONTS */
+  --font-family-h1: "Monomaniac One";
+  --font-family-p: "Lato";
+  --font-family-primary: "Lilita One";
+  --font-family-about: "Impact";
 }

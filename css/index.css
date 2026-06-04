@@ -1,3 +1,23 @@
+main {
+  position: relative;
+}
+header {
+  z-index: 10;
+}
+h1 {
+  margin-block: 30px;
+  place-self: center;
+  text-shadow: 1px 1px 3px #0a510e;
+}
+.portrait {
+  max-width: 50%;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px 10px rgb(150, 173, 145);
+}
+.projects {
+  place-self: center;
+  margin-bottom: 20px;
+}
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -5,9 +25,28 @@
   gap: 10px;
 }
 .folder {
-  max-width: 70%;
+  max-width: 65%;
 }
 .tematext_mobil {
   text-decoration: none;
   color: var(--color-folder-text);
+}
+.smoke_down {
+  position: absolute;
+  z-index: -1;
+  max-width: 50%;
+  top: -90px;
+  place-self: end;
+  opacity: 0.3;
+}
+.smoke_up {
+  position: absolute;
+  z-index: -1;
+  max-width: 30%;
+  opacity: 0.3;
+  bottom: -50px;
+}
+p {
+  padding-bottom: 40px;
+  padding-inline: 30px;
 }

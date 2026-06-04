@@ -1,15 +1,25 @@
+/* main {
+  position: relative;
+}
+ */
 .accent_pic {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  transform: scaleX(-1);
   opacity: 0.2;
+  /* z-index: -1; */
 }
 
 .erhverv {
   place-self: end;
   margin-top: 40px;
   padding-left: 20px;
-  li::marker {
-    color: var(--darkgreen3rd);
-  }
 }
+.erhverv li::marker {
+  color: var(--darkgreen3rd);
+}
+
 .text {
   background-color: var(--green2nd);
   padding: 10px;

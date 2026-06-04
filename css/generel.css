@@ -96,7 +96,39 @@ body {
   background-color: var(--color-background);
 }
 
+h1 {
+  font-family: var(--font-family-h1);
+  font-size: 40px;
+  color: var(--color-frontpage-text);
+}
+/* h2 {
+} */
+/* h3 {
+} */
+h4 {
+  font-family: var(--font-family-p);
+  font-size: larger;
+  place-self: center;
+  margin-bottom: 10px;
+}
+/* h5 {
+} */
+.tema {
+  font-family: var(--font-family-primary);
+  font-size: 18px;
+  color: var(--color-folder-text);
+}
+
+.projects {
+  font-family: var(--font-family-h1);
+  font-size: 30px;
+  font-weight: 200;
+  color: var(--color-folder-text);
+}
+
 p {
+  font-family: var(--font-family-p);
+  color: #000;
   max-width: 65ch;
 }
 .portrait {
