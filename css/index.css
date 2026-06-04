@@ -5,6 +5,9 @@ header {
   z-index: 10;
 }
 h1 {
+  font-family: var(--font-family-h1);
+  font-size: 40px;
+  color: var(--color-frontpage-text);
   margin-block: 30px;
   place-self: center;
   text-shadow: 1px 1px 3px #0a510e;

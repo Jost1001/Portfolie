@@ -96,11 +96,6 @@ body {
   background-color: var(--color-background);
 }
 
-h1 {
-  font-family: var(--font-family-h1);
-  font-size: 40px;
-  color: var(--color-frontpage-text);
-}
 /* h2 {
 } */
 /* h3 {
