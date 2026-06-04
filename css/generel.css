@@ -130,6 +130,10 @@ p {
   max-width: 70%;
   place-self: center;
 }
+.pic {
+  max-width: 80%;
+  place-self: center;
+}
 /* Body end */
 
 /* Footer */
