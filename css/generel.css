@@ -135,8 +135,21 @@ p {
 /* Footer */
 footer {
   background-color: var(--color-headerfooter);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 .footer {
-  place-self: center;
+  text-align: center;
+}
+.footer-section {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  align-items: flex-start;
+}
+.footer_p {
+  max-width: 40ch;
 }
 /* Footer end */
