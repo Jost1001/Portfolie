@@ -58,7 +58,7 @@ h1 {
   top: -10px;
   left: 20px;
   z-index: 2;
-  background-color: var(--teal);
+  background-color: var(--color-accent-tape);
   padding: 5px 10px;
 }
 .skills {
@@ -101,5 +101,5 @@ h1 {
   border-radius: 50%;
 }
 .dots .filled {
-  background-color: var(--darkgreen3rd);
+  background-color: var(--color-dot-filled);
 }

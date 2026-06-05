@@ -61,14 +61,48 @@ select,
 /* Reset end */
 
 /* Header */
+nav {
+  display: flex;
+  align-items: center;
+}
 .logo {
   max-width: 80px;
 }
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
   background-color: var(--color-headerfooter);
-  .menu {
-    list-style: none;
-  }
+}
+.menu {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+.menu a {
+  color: var(--color-header-text);
+  text-decoration: none;
+  font-family: var(--font-family-primary);
+  font-size: 24px;
+}
+.menu li {
+  color: var(--color-header-text);
+  font-family: var(--font-family-primary);
+  font-size: 24px;
+}
+nav.active .menu {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  background-color: var(--color-mobilmenu);
+  padding: 20px;
 }
 .burger {
   width: 30px;
@@ -80,13 +114,18 @@ header {
   display: block;
   width: 100%;
   height: 3px;
-  background-color: var(--white);
+  background-color: var(--orange);
   transition: 0.2s linear;
   align-self: center;
 }
 
 .burger {
-  display: none;
+  display: block;
+}
+@media (min-width: 800px) {
+  .burger {
+    display: none;
+  }
 }
 
 /* Header end */
@@ -137,7 +176,6 @@ p {
 
 /* Accordion */
 .accordion {
-  /* background-color: var(--color-background); */
   background-color: var(--green);
   color: #000;
   cursor: pointer;
@@ -150,7 +188,10 @@ p {
   margin-top: 10px;
 }
 
-.active .accordion:hover {
+.accordion:hover {
+  background-color: var(--darkgreen);
+}
+.accordion.active {
   background-color: var(--darkgreen);
 }
 
