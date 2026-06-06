@@ -4,12 +4,18 @@ main {
 header {
   z-index: 10;
 }
+.logo-desktop {
+  display: none;
+}
+.folder_desk {
+  display: none;
+}
 h1 {
   font-family: var(--font-family-h1);
   font-size: 40px;
   color: var(--color-frontpage-text);
   margin-block: 30px;
-  place-self: center;
+  text-align: center;
   text-shadow: 1px 1px 3px #0a510e;
 }
 .portrait {
@@ -18,7 +24,7 @@ h1 {
   box-shadow: 4px 4px 10px rgb(150, 173, 145);
 }
 .projects {
-  place-self: center;
+  text-align: center;
   margin-bottom: 20px;
 }
 .grid_1-1 {
@@ -39,7 +45,7 @@ h1 {
   z-index: -1;
   max-width: 50%;
   top: -180px;
-  place-self: end;
+  right: 0;
   opacity: 0.3;
 }
 .smoke_up {
@@ -52,4 +58,92 @@ h1 {
 p {
   padding-bottom: 40px;
   padding-inline: 30px;
+}
+
+@media (min-width: 800px) {
+  .logo {
+    display: none;
+  }
+  .folder {
+    display: none;
+  }
+  .logo-desktop {
+    display: block;
+    width: 60px;
+  }
+  header {
+    height: 70px;
+  }
+  .smoke_down {
+    max-width: 20%;
+    opacity: 0.4;
+    top: -300px;
+  }
+  .smoke_up {
+    max-width: 20%;
+    opacity: 0.4;
+    bottom: -80px;
+  }
+  h1 {
+    margin-top: 100px;
+    font-size: 50px;
+    font-weight: 300;
+  }
+  .portrait {
+    position: relative;
+    max-width: 15%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .intro {
+    place-self: center;
+    max-width: 45ch;
+    margin-bottom: 100px;
+  }
+  .folder_desk {
+    display: block;
+    position: absolute;
+    max-width: 12%;
+  }
+  .tema2 {
+    bottom: 150px;
+    left: 200px;
+  }
+  .tema3 {
+    top: 20px;
+    left: 310px;
+  }
+  .tema4 {
+    top: 20px;
+    right: 310px;
+  }
+  .tema5 {
+    bottom: 150px;
+    right: 200px;
+  }
+  .projects {
+    display: none;
+  }
+  .tema2_text,
+  .tema3_text,
+  .tema4_text,
+  .tema5_text {
+    position: absolute;
+  }
+  .tema2_text {
+    bottom: 0;
+    left: 0;
+  }
+  .tema3_text {
+    top: 0;
+    left: 0;
+  }
+  .tema4_text {
+    top: 0;
+    right: 0;
+  }
+  .tema5_text {
+    bottom: 0;
+    right: 0;
+  }
 }
