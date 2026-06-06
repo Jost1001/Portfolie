@@ -55,6 +55,9 @@ h1 {
   opacity: 0.3;
   bottom: -50px;
 }
+.smoke_desk {
+  display: none;
+}
 p {
   padding-bottom: 40px;
   padding-inline: 30px;
@@ -67,6 +70,10 @@ p {
   .folder {
     display: none;
   }
+  .smoke_up {
+    display: none;
+  }
+
   .logo-desktop {
     display: block;
     width: 60px;
@@ -79,10 +86,14 @@ p {
     opacity: 0.4;
     top: -300px;
   }
-  .smoke_up {
+  .smoke_desk {
+    display: block;
+    position: absolute;
     max-width: 20%;
+    left: 0;
+    bottom: -170px;
     opacity: 0.4;
-    bottom: -80px;
+    z-index: -1;
   }
   h1 {
     margin-top: 100px;
@@ -98,28 +109,35 @@ p {
   .intro {
     place-self: center;
     max-width: 45ch;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
   }
   .folder_desk {
     display: block;
     position: absolute;
-    max-width: 12%;
+    width: 170px;
+  }
+  .folder_desk a {
+    position: relative;
+    z-index: 2;
+  }
+  .folder_desk a img {
+    width: 100%;
   }
   .tema2 {
-    bottom: 150px;
-    left: 200px;
+    bottom: 180px;
+    left: 230px;
   }
   .tema3 {
-    top: 20px;
-    left: 310px;
+    top: 50px;
+    left: 350px;
   }
   .tema4 {
-    top: 20px;
-    right: 310px;
+    top: 50px;
+    right: 350px;
   }
   .tema5 {
-    bottom: 150px;
-    right: 200px;
+    bottom: 180px;
+    right: 230px;
   }
   .projects {
     display: none;
@@ -131,19 +149,37 @@ p {
     position: absolute;
   }
   .tema2_text {
-    bottom: 0;
-    left: 0;
+    bottom: 115px;
+    left: 255px;
   }
   .tema3_text {
-    top: 0;
-    left: 0;
+    top: 190px;
+    left: 375px;
   }
   .tema4_text {
-    top: 0;
-    right: 0;
+    top: 190px;
+    right: 375px;
   }
   .tema5_text {
-    bottom: 0;
-    right: 0;
+    bottom: 115px;
+    right: 255px;
+  }
+  .img2,
+  .img3,
+  .img4,
+  .img5 {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    max-width: 85%;
+    z-index: 1;
+    transition: transform 0.3s;
+  }
+
+  .folder_desk:hover .img2,
+  .folder_desk:hover .img3,
+  .folder_desk:hover .img4,
+  .folder_desk:hover .img5 {
+    transform: translate(10px, -40px) rotate(-15deg);
   }
 }
