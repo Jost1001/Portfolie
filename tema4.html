@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/generel.css">
     <link rel="stylesheet" href="css/tema4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&family=Monomaniac+One&display=swap"
+        rel="stylesheet">
+
     <link rel="icon" type="image/png" sizes="16x16" href="imgs/logo/favikon_og_logo_mobil.png">
 
     <title>Tema 4</title>
@@ -25,18 +31,20 @@
                 <li class="navlink">
                     <a href="om_mig.html">Om mig</a>
                 </li>
-                <li class="navlink projects-toggle">Projekter
+                <li class="navlink">
+                    <span class="projects-toggle name">Projekter</span>
                     <ul class="submenu">
                         <li><a href="tema2.html">Tema 2</a></li>
                         <li><a href="tema3.html">Tema 3</a></li>
-                        <li><a href="tema4.html">Tema 4</a></li>
+                        <li><a class="active" href="tema4.html">Tema 4</a></li>
                         <li><a href="tema5.html">Tema 5</a></li>
                     </ul>
                 </li>
                 <li class="socials">
                     <span>
-                        <a href="/instagram"><span class="instagram-icon"></span></a>
-                        <a href="/facebook"><span class="facebook-icon"></span></a>
+                        <a href="https://www.instagram.com/johanneatlife/" target="_blank"><span
+                                class="instagram-icon"></span></a>
+                        <a href="https://www.facebook.com/johanne.hagstenstaal"><span class="facebook-icon"></span></a>
                     </span>
                 </li>
             </ul>
@@ -52,7 +60,21 @@
     <main>
         <h1 class="tema_head">Tema 4</h1>
         <h2 class="tema_titel">Grundlæggende Brugergrænsefladeudvikling</h2>
-        <p class="tema_intro">I dette tema ___________</p>
+        <p class="tema_intro">Brugergrænseflade udvikling, er arbejde fokuseret på den del af et projekt, som brugeren
+            interargerer med. Dvs.
+            hjemmesidens udseende og funktion på brugerens ende. Gennem dette tema, blev vi præsenteret for en ny type
+            grafik, man
+            kan bruge i stedet for almene ikoner, samt mere avanceret brug af animationer og kodesprogene.
+            Tema 4 handlede derfor om arbejde med udviklingen af udseende og opførsel (brugergrænseflade) af et site vi
+            fik
+            udleveret. Dette skulle gøres med værktøjer vi har brugt før (CSS og JavaScript), men med tilføjelsen af
+            Adobe
+            Illustrator til grafik design. Opgaven vi blev stillet var at foretille os en form for en "nødsituation" og
+            så udvikle
+            en website der ville fungere som en informationsside omkring denne nødsituation. Jeg valgte
+            "nødsituationen", at man har inviteret folk forbi, og man derfor skal være vært for første gang. Min side,
+            blev derfor en info portal, hvor man kunne finde en tjekliste til sit selskab og læse om, hvad der gjorde et
+            godt selskab.</p>
         <div class="grid_2-2">
             <div>
                 <div class="grid_svg">
@@ -62,23 +84,39 @@
                 </div>
             </div>
             <div>
-                <button class="accordion">Skitse arbejde og illustrator</button>
+                <button class="accordion">Skitse og Illustrator arbejde med sidegrafik.</button>
                 <div class="panel">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore magnam quibusdam corporis
-                        commodi
-                        sunt
-                        cumque cupiditate quidem autem consectetur, deserunt sit nihil assumenda voluptates asperiores,
-                        explicabo
-                        reprehenderit quod recusandae doloremque!</p>
+                    <p>I forbindelse med vores side, skulle vi lave en såkaldt infografik. En form for grafik, hvor man
+                        ville kunne klikke på elementer for så at få noget information. Dette skulle jo selvfølgelig
+                        være noget der gav mening i forbindelse med det valgte emne for siden. Jeg endte med at finde en
+                        masse forskellige billeder af stole og borde sammensætninger og valgte at blande stolene, for
+                        både at vise at der var mulighed for at vælge lige den type selskab man gerne vil holde, men
+                        også for at vise, at man sagtens kan holde fint selskab selvom at møblerne ikke matcher.</p>
+                    <p>Det næste var så at vælge, hvilke 3 elementer der skulle være interaktive, og det endte med at
+                        blive en stol, madklokken, og en af opdækningerne. Grunden hertil, var så at jeg nemmest ville
+                        få dækket de umiddelbart mest essentielle dele med et selskab eller en middag.</p>
+                    <p>Noget andet der også var nyt og vigtigt for dette tema, var at vi skulle designe vores logotype
+                        (ikke helt et logo (motiv), ikke helt en typografi (ren tekst)). Så jeg skulle selvfølgelig
+                        finde ud af, hvad siden skulle hedde. Efter megen enerådig debat, og inputs fra medstuderende og
+                        familiemedlemmer, endte jeg med at gå med sidetitlen <b>GæKo</b> der var en forkortelse for
+                        "Gæsterne Kommer". Dette var også et sjovt navn, fordi jeg nu kunne lege med en lille gecko
+                        maskot.</p>
+
+                    <div class="grid_2-2">
+                        <img class="grid_pic" src="imgs/tema4/gaeko_illu.png" alt="illustrator image">
+                        <img class="grid_pic" src="imgs/tema4/gaeko.png" alt="website version">
+                    </div>
+                    <p>I min logotype kom geckoen også tilsyne ved hjælp af G'et. Jeg brugte silhouetten af en gecko som
+                        "udhuling" af g'et.</p>
                 </div>
             </div>
         </div>
         <div class="grid_2-2-1">
             <div>
-                <img class="pic" src="" alt="">
+                <img class="pic" src="imgs/tema4/forside_dark.png" alt="darkmode">
             </div>
             <div class="minus">
-                <button class="accordion">Pop-up vinduer og darkmode</button>
+                <button class="accordion">Det "nye og mere avancerede kode": Pop-up vinduer og darkmode</button>
                 <div class="panel">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore magnam quibusdam corporis
                         commodi
@@ -87,6 +125,10 @@
                         asperiores,
                         explicabo
                         reprehenderit quod recusandae doloremque!</p>
+                    <div class="grid_2-2">
+                        <img class="grid_pic" src="imgs/tema4/forside_animationer.png" alt="forside animationer">
+                        <img class="grid_pic" src="imgs/tema4/pop_over.png" alt="pop-over animationer">
+                    </div>
                 </div>
             </div>
 
@@ -117,7 +159,7 @@
 
         </div>
 
-        <a class="btn" href="https://certifiedrat.github.io/20grams/index.html" target="_blank">Til projektet
+        <a class="btn" href="https://jost1001.github.io/emergengy_site/index.html" target="_blank">Til projektet
             <span class="arrow_circle">↗</span>
         </a>
     </main>
@@ -126,12 +168,23 @@
         <div class="footer-section">
             <div>
                 <div>
-                    <p>Om Mig</p>
+                    <p><a class="no_line footer_text" href="om_mig.html">Om Mig</a></p>
                     <p class="footer_p">Studerende på første semester på Multimediedesign ved EK</p>
                 </div>
             </div>
             <div>
-                <p>Kontakt</p>
+
+                <p class="footer_text">Kontakt</p>
+                <li class="socials">
+                    <span class="socials">
+                        <a href="https://www.instagram.com/johanneatlife/" target="_blank"><span> <img
+                                    class="instagram icon" src="imgs/design_elementer/instagram-brands-solid-full.svg"
+                                    alt=""></span></a>
+                        <a href="https://www.facebook.com/johanne.hagstenstaal"><span><img class="facebook icon"
+                                    src="imgs/design_elementer/facebook-brands-solid-full.svg" alt=""></span></a>
+                    </span>
+                </li>
+
             </div>
 
         </div>

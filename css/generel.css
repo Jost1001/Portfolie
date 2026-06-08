@@ -80,12 +80,12 @@ header {
   background-color: var(--color-headerfooter);
 }
 .menu {
-  list-style: none;
   display: none;
   flex-direction: column;
-  gap: 15px;
+  list-style: none;
+  /* gap: 15px;
   margin: 0;
-  padding: 0;
+  padding: 0; */
 }
 .menu a {
   color: var(--color-header-text);
@@ -96,7 +96,7 @@ header {
 .menu li {
   color: var(--color-header-text);
   font-family: var(--font-family-primary);
-  font-size: 24px;
+  list-style: none;
 }
 nav.active .menu {
   display: flex;
@@ -104,8 +104,6 @@ nav.active .menu {
   top: 100%;
   right: 0;
   left: 0;
-  background-color: var(--color-mobilmenu);
-  padding: 20px;
 }
 .burger {
   display: flex;
@@ -129,11 +127,28 @@ nav.active .menu {
 .submenu {
   display: none;
   flex-direction: column;
+  list-style: none;
   gap: 10px;
   padding-left: 10px;
 }
+.submenu a {
+  font-size: 20px;
+}
+.submenu li::before {
+  content: "▶ ";
+  font-size: 12px;
+}
 .projects-toggle.active .submenu {
   display: flex;
+}
+.projects-toggle::after {
+  content: "▼";
+  font-size: 18px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.projects-toggle.active::after {
+  transform: rotate(180deg);
 }
 html::before {
   content: "";
@@ -157,12 +172,64 @@ html::before {
   .burger {
     display: none;
   }
+  .submenu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .submenu li::before {
+    content: "";
+  }
+
   .logo-desktop {
     display: block;
     width: 60px;
   }
   .logo {
     display: none;
+  }
+  nav {
+    margin-left: auto;
+  }
+  nav.active .menu {
+    position: static;
+    background: none;
+    padding: 0;
+  }
+  .name {
+    display: none;
+  }
+  .projects-toggle::after {
+    content: none; /*pil væk*/
+  }
+  .projects-toggle.active .submenu {
+    display: flex;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+  .menu a {
+    position: relative;
+    text-decoration: none;
+  }
+  .menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: currentColor;
+    transition: width 0.3s ease;
+  }
+  .menu a:hover::after {
+    width: 100%;
+  }
+  .menu a.active::after {
+    width: 100%;
   }
 }
 
@@ -238,6 +305,9 @@ button {
   margin-left: 20px;
   margin-bottom: 5px;
 }
+.grid_pic {
+  margin-bottom: 10px;
+}
 
 /* Accordion */
 .accordion {
@@ -270,7 +340,7 @@ button {
   margin-left: 5px;
 }
 
-.active:after {
+.accordion.active:after {
   content: "læs mindre";
 }
 
@@ -344,8 +414,6 @@ button {
     margin-top: 100px;
     margin-inline: 80px; /* text-align: left; */
   }
-  .minus {
-  }
 }
 /* Body end */
 
@@ -368,5 +436,25 @@ footer {
 }
 .footer_p {
   max-width: 40ch;
+}
+.icon {
+  color: var(--orange);
+  text-decoration: none;
+  max-width: 15%;
+}
+.footer_text {
+  font-family: var(--font-family-h1);
+  color: var(--orange);
+  font-size: 23px;
+}
+.no_line {
+  text-decoration: none;
+}
+@media (min-width: 800px) {
+  .socials {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
 }
 /* Footer end */
