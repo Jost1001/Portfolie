@@ -424,7 +424,7 @@ button {
   .fade {
     animation: fadeIn linear both;
     animation-timeline: view();
-    animation-range: 0 25%;
+    animation-range: 0 30%;
   }
   @keyframes fadeIn {
     from {
