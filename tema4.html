@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="top">
         <div class="logo">
             <a href="index.html"><img src="imgs/logo/favikon_og_logo_mobil.png" alt="logo"></a>
         </div>
@@ -58,6 +58,7 @@
     </header>
 
     <main>
+        <a href="#top" class="up">Til toppen↑</a>
         <h1 class="tema_head">Tema 4</h1>
         <h2 class="tema_titel">Grundlæggende Brugergrænsefladeudvikling</h2>
         <p class="tema_intro">Brugergrænseflade udvikling, er arbejde fokuseret på den del af et projekt, som brugeren
@@ -78,9 +79,9 @@
         <div class="grid_2-2">
             <div>
                 <div class="grid_svg">
-                    <img class="pic svg" src="imgs/tema4/skitse.png" alt="skitse">
+                    <img class="pic svg" src="imgs/tema4/skitse.webp" alt="skitse">
                     <img class="arrow" src="imgs/tema4/arrow.png" alt="arrow">
-                    <img class="pic svg" src="imgs/tema4/svg.png" alt="svg">
+                    <img class="pic svg" src="imgs/tema4/svg.webp" alt="svg">
                 </div>
             </div>
             <div>
@@ -103,8 +104,8 @@
                         maskot.</p>
 
                     <div class="grid_2-2">
-                        <img class="grid_pic" src="imgs/tema4/gaeko_illu.png" alt="illustrator image">
-                        <img class="grid_pic" src="imgs/tema4/gaeko.png" alt="website version">
+                        <img class="grid_pic" src="imgs/tema4/gaeko_illu.webp" alt="illustrator image">
+                        <img class="grid_pic" src="imgs/tema4/gaeko.webp" alt="website version">
                     </div>
                     <p>I min logotype kom geckoen også tilsyne ved hjælp af G'et. Jeg brugte silhouetten af en gecko som
                         "udhuling" af g'et.</p>
@@ -116,9 +117,11 @@
                 </div>
             </div>
         </div>
-        <div class="grid_2-2-1">
+        <span class="line line_desk"></span>
+
+        <div class="grid_2-2-1 fade">
             <div>
-                <img class="pic" src="imgs/tema4/forside_dark.png" alt="darkmode">
+                <img class="pic" src="imgs/tema4/forside_dark.webp" alt="darkmode">
             </div>
             <div class="minus">
                 <button class="accordion">Det "nye og mere avancerede kode": Darkmode og pop-up vinduer</button>
@@ -135,24 +138,23 @@
                         og gives indhold.</p>
                     <p>Det var meget interessant og et element der er meget brugbart på mange forskellige områder: Tænk
                         blandt andet nyhedsbrevs pop-op vinduer eller "vil du tillade cookies" vinduer.</p>
-                    <div class="grid_2-2">
-                        <img class="grid_pic" src="imgs/tema4/forside_animationer.png" alt="forside animationer">
-                        <img class="grid_pic" src="imgs/tema4/pop_over.png" alt="pop-over animationer">
-                    </div>
+                    <img class="grid_pic" src="imgs/tema4/pop_over.webp" alt="pop-over animationer">
                 </div>
             </div>
 
         </div>
-        <div class="grid_2-2">
+        <span class="line line_desk"></span>
+
+        <div class="grid_2-2 fade">
             <div>
-                <img class="pic" src="" alt="">
+                <img class="pic" src="imgs/tema4/forside_animationer.webp" alt="forside animationer">
             </div>
             <div>
-                <button class="accordion">Animations arbejde og "ekstra detajle"</button>
+                <button class="accordion">Animations arbejde og "ekstra detajle". I forbindelse med opgaven, var et af
+                    kravene at der skulle være noget animation på vores site. Vi
+                    skulle animere de informations vinduer der skulle dukke op, når man interargerede med vores
+                    infografik.</button>
                 <div class="panel">
-                    <p>I forbindelse med opgaven, var et af kravene at der skulle være noget animation på vores site. Vi
-                        skulle animere de informations vinduer der skulle dukke op, når man interargerede med vores
-                        infografik.</p>
                     <p>Foruden dette krav, tilføjede jeg også animations elementer til min forside, ved at der skete
                         noget animation, når man scrollede ned. Mine "nyheds"-bokse kom nemlig forskudt til syne og
                         "poppede" derved op på efter hinanden.</p>
@@ -176,33 +178,35 @@
         </a>
     </main>
 
-    <footer>
-        <div class="footer-section">
-            <div>
-                <div>
-                    <p><a class="no_line footer_text" href="om_mig.html">Om Mig</a></p>
-                    <p class="footer_p">Studerende på første semester på Multimediedesign ved EK</p>
-                </div>
+    <footer class="footer">
+        <div class="footer-grid">
+
+            <div class="footer-col">
+                <a class="footer-title no_line" href="om_mig.html">Om Mig</a>
+                <p class="footer-text">
+                    Studerende på første semester på Multimediedesign ved EK
+                </p>
             </div>
-            <div>
 
-                <p class="footer_text">Kontakt</p>
-                <li class="socials">
-                    <span class="socials">
-                        <a href="https://www.instagram.com/johanneatlife/" target="_blank"><span> <img
-                                    class="instagram icon" src="imgs/design_elementer/instagram-brands-solid-full.svg"
-                                    alt=""></span></a>
-                        <a href="https://www.facebook.com/johanne.hagstenstaal"><span><img class="facebook icon"
-                                    src="imgs/design_elementer/facebook-brands-solid-full.svg" alt=""></span></a>
-                    </span>
-                </li>
+            <div class="footer-col">
+                <p class="footer-title">Kontakt</p>
 
+                <div class="socials">
+                    <a href="https://www.instagram.com/johanneatlife/" target="_blank" rel="noopener noreferrer">
+                        <img class="icon" src="imgs/design_elementer/instagram-brands-solid-full.svg" alt="Instagram">
+                    </a>
+
+                    <a href="https://www.facebook.com/johanne.hagstenstaal" target="_blank" rel="noopener noreferrer">
+                        <img class="icon" src="imgs/design_elementer/facebook-brands-solid-full.svg" alt="Facebook">
+                    </a>
+                </div>
             </div>
 
         </div>
 
-        <p class="footer">&copy; 2026 Johanne Hagstèn Staal | Portfolio</p>
-
+        <p class="footer-bottom">
+            &copy; 2026 Johanne Hagstèn Staal | Portfolio
+        </p>
     </footer>
     <script src="js/accordion.js"></script>
     <script src="js/burgermenu.js"></script>

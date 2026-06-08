@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="top">
         <div class="logo">
             <a href="index.html"><img src="imgs/logo/favikon_og_logo_mobil.png" alt="logo"></a>
         </div>
@@ -57,6 +57,7 @@
     </header>
 
     <main>
+        <a href="#top" class="up">Til toppen↑</a>
         <h1 class="tema_head">Tema 3</h1>
         <h2 class="tema_titel">Grundlæggende UX/UI</h2>
         <p class="tema_intro">At arbejde med UX/UI, betyder at arbejde med en hjemmesides digitale brugergrænseflade
@@ -83,7 +84,7 @@
 
         <div class="grid_2-2">
             <div>
-                <img class="pic" src="imgs/tema3/deskresearch.png" alt="desk research">
+                <img class="pic" src="imgs/tema3/deskresearch.webp" alt="desk research">
             </div>
             <div>
                 <button class="accordion">På billedet ses noget af det nye vi lærte fra dette tema, nemlig lidt
@@ -112,9 +113,11 @@
                 </div>
             </div>
         </div>
-        <div class="grid_2-2-1">
+        <span class="line line_desk"></span>
+
+        <div class="grid_2-2-1 fade">
             <div>
-                <img class="pic" src="imgs/tema3/klikbar_prototype.png" alt="">
+                <img class="pic" src="imgs/tema3/klikbar_prototype.webp" alt="">
             </div>
             <div class="minus">
                 <button class="accordion">På billedet ses min <b>klikbare prototype</b> for temaets projekt.</button>
@@ -136,9 +139,11 @@
             </div>
 
         </div>
-        <div class="grid_2-2">
+        <span class="line line_desk"></span>
+
+        <div class="grid_2-2 fade">
             <div>
-                <img class="pic" src="imgs/tema3/dark_night.png" alt="dark and light mode">
+                <img class="pic" src="imgs/tema3/dark_night.webp" alt="dark and light mode">
             </div>
             <div>
                 <button class="accordion">Noget "ekstra": Et udkast til en mulig lys og mørk version af min
@@ -164,33 +169,35 @@
         </a>
     </main>
 
-    <footer>
-        <div class="footer-section">
-            <div>
-                <div>
-                    <p><a class="no_line footer_text" href="om_mig.html">Om Mig</a></p>
-                    <p class="footer_p">Studerende på første semester på Multimediedesign ved EK</p>
-                </div>
+    <footer class="footer">
+        <div class="footer-grid">
+
+            <div class="footer-col">
+                <a class="footer-title no_line" href="om_mig.html">Om Mig</a>
+                <p class="footer-text">
+                    Studerende på første semester på Multimediedesign ved EK
+                </p>
             </div>
-            <div>
 
-                <p class="footer_text">Kontakt</p>
-                <li class="socials">
-                    <span class="socials">
-                        <a href="https://www.instagram.com/johanneatlife/" target="_blank"><span> <img
-                                    class="instagram icon" src="imgs/design_elementer/instagram-brands-solid-full.svg"
-                                    alt=""></span></a>
-                        <a href="https://www.facebook.com/johanne.hagstenstaal"><span><img class="facebook icon"
-                                    src="imgs/design_elementer/facebook-brands-solid-full.svg" alt=""></span></a>
-                    </span>
-                </li>
+            <div class="footer-col">
+                <p class="footer-title">Kontakt</p>
 
+                <div class="socials">
+                    <a href="https://www.instagram.com/johanneatlife/" target="_blank" rel="noopener noreferrer">
+                        <img class="icon" src="imgs/design_elementer/instagram-brands-solid-full.svg" alt="Instagram">
+                    </a>
+
+                    <a href="https://www.facebook.com/johanne.hagstenstaal" target="_blank" rel="noopener noreferrer">
+                        <img class="icon" src="imgs/design_elementer/facebook-brands-solid-full.svg" alt="Facebook">
+                    </a>
+                </div>
             </div>
 
         </div>
 
-        <p class="footer">&copy; 2026 Johanne Hagstèn Staal | Portfolio</p>
-
+        <p class="footer-bottom">
+            &copy; 2026 Johanne Hagstèn Staal | Portfolio
+        </p>
     </footer>
     <script src="js/accordion.js"></script>
     <script src="js/burgermenu.js"></script>
