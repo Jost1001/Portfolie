@@ -8,7 +8,6 @@
 }
 
 html {
-  interpolate-size: allow-keywords;
   font-family: system-ui, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -17,11 +16,6 @@ html {
 h1,
 h2 {
   line-height: 1.25;
-}
-
-p,
-li {
-  text-wrap: pretty;
 }
 
 img,
@@ -50,14 +44,6 @@ textarea {
   min-height: 4lh;
 }
 
-legend {
-  padding: 0;
-}
-
-select,
-::picker(select) {
-  appearance: base-select;
-}
 /* Reset end */
 
 /* Header */
@@ -347,21 +333,25 @@ button {
   color: #000;
   cursor: pointer;
   padding: 18px;
-  width: fit-content;
-  margin-inline: 20px; /* text-align: left; */
+  width: 90%;
+  margin-inline: 24px;
+  justify-self: center;
   border: none;
   outline: none;
   transition: 0.4s;
   margin-top: 10px;
 }
 .panel {
-  padding: 0 18px;
-  background-color: var(--color-background);
+  padding-inline: 18px;
+  background-color: #f0faec;
   max-height: 0;
+  width: 90%;
+  justify-self: center;
   overflow: hidden;
   margin-bottom: 50px;
   margin-inline: 10px;
   transition: max-height 0.2s ease-out;
+  border: 2px solid var(--green);
 }
 
 .accordion:after {
